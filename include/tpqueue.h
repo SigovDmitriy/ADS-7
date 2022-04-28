@@ -42,7 +42,7 @@ void TPQueue <T>::push(const T& content) {
     tail -> next -> prev = tail;
     tail = item;
   } else if (!tmp && !head) {
-    head=tail = item;
+    head = tail = item;
   } else if (!tmp -> prev) {
     tmp -> prev = item;
     item -> next = tmp;
